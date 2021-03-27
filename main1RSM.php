@@ -112,6 +112,81 @@ that takes a mixture of technical excellence and clear communication between the
             </div>
         </div>
        <!-- End Registration Section -->
+        
+        <!-- Start Technicians Section -->
+        <div class="jumbotron bg-danger"></div>
+        <div class="container" style="background-color:danger">
+            <h2 class="text-center text-Black">Technicians</h2>
+            <div class="row mt-5">
+                <div class="col-lg-3 col-sm-6">
+                <div class="card shadow-lg mb=2">
+                    <div class="card-body text-center">
+                        <img src=Images/techh1.jpg class="img-fluid" style="border-radius:100px" alt="avt1">
+                        <h4 class="card-title">Shafin Ahmed</h4>
+                        <p class="card-text text-center">
+                            <center>Shafin Ahmed is very hard working.He is responsible for hardware technical works</center>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <! -- end 1st Column -- !>
+                
+                <div class="col-lg-3 col-sm-6">
+                <div class="card shadow-lg mb=2">
+                    <div class="card-body text-center">
+                        <img src=Images/tech2.jpg class="img-fluid" style="border-radius:100px" alt="avt1">
+                        <h4 class="card-title">Faisal Sharif</h4>
+                        <p class="card-text text-center">
+                            <center>Faisal Sharif is very hard working.He is responsible for hardware technical works</center>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+              <! -- end 2nd Column -- !>
+                
+                <div class="col-lg-3 col-sm-6">
+                <div class="card shadow-lg mb=2">
+                    <div class="card-body text-center">
+                        <img src=Images/techh3.jpg class="img-fluid" style="border-radius:100px" alt="avt1">
+                        <h4 class="card-title">Raihan Khan</h4>
+                        <p class="card-text text-center">
+                            <center>Raihan Khan is very hard working.He is responsible for hardware technical works</center>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                <! -- end 3rd Column -- !>
+                
+                <div class="col-lg-3 col-sm-6">
+                <div class="card shadow-lg mb=2">
+                    <div class="card-body text-center">
+                        <img src=Images/tech4.jpg class="img-fluid" style="border-radius:100px" alt="avt1">
+                        <h4 class="card-title">Rafi Hasan</h4>
+                        <p class="card-text text-center">
+                            <center>Rafi Hasan is very hard working.He is responsible for hardware technical works</center>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+                 <! -- end 4th Column -- !>
+            </div>
+        </div>
+           <! -- Start Contact Us section -- !>
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-8">
+                        <form action=""  method="POST">
+                        <input type="text" class="form-control" name="name" placeholder="Name"><br>
+                        <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
+                        <input type="email" class="form-control" name="email" placeholder="Email"><br>
+                        <textarea input type="text" class="form-control" name="message" placeholder="How can we help you?" style="150px;"></textarea><br>
+                    </form>
+                </div>   
+               
+            </div>
+        </div>   <! -- end contact us section -- !>
+        
                <!-- JavaScript -->
         <script src="JS/jquery.min.js"></script>
         <script src="JS/popper1.min.js"></script>
