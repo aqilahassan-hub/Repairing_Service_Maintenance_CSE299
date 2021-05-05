@@ -29,12 +29,12 @@ else{
         if($_REQUEST['checkid']== ""){
                         
                 $msg= '<div class="alert alert-success col-sm-6 ml-5 mt-2" role="alert">fill the field</div>' ;
-            
         }else{
         $sql = "SELECT * FROM assign_work WHERE request_id ={$_REQUEST['checkid']}";
-$result = $conn->query($sql) ;
-$row=$result->fetch_assoc();
-        if($row['request_id'] == $_REQUEST['checkid']){ ?>
+        $result = $conn->query($sql) ;
+        $row=$result->fetch_assoc();
+        if(($row['request_id'] == $_REQUEST['checkid'])){ ?>
+   
     <h3 class="text-center mt-5">Assign Work Details</h3>
     <table class="table table-border">
         <tbody>
@@ -97,9 +97,9 @@ $row=$result->fetch_assoc();
         </tbody>
     </table>
     <div class="text-center">
-        <form action="" class="mb-5">
-                        <input type="submit" value="Print" name="submitrequest" class="btn btn-danger shadow-sm mt-3" onClick='window.print()' >
-            <input type="reset" value="Close" name="resetrequest" class="btn btn-secondary shadow-sm mt-3 ">
+        <form action="" class="mb-5 d-print-none">
+                        <input type="submit" value="Print" name="submitrequest" class="btn btn-danger shadow-sm mb-3" onClick='window.print()' >
+            <input type="reset" value="Close" name="resetrequest" class="btn btn-secondary shadow-sm mb-3 ">
         </form>
     </div>
     <?php }else{
