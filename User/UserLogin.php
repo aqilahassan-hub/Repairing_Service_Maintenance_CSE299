@@ -1,11 +1,18 @@
 <?php
+define('TITLE','User Login') ;
 include('../dbConnection.php') ;
+
+
+session_start() ;
+if(!isset($_SESSION['is_login'])){
 if(isset($_POST['uEmail'])){
-$uemail=trim($_POST['uEmail']) ;
-$upassword=trim($_POST['uPassword']) ;
+$uemail = mysqli_real_escape_string($conn,trim($_POST['uEmail'])) ;
+$upassword= mysqli_real_escape_string($conn,trim($_POST['uPassword'])) ;
 $sql= "SELECT Email,Password FROM userlist_info WHERE Email= '".$uemail."' AND Password='".$upassword."' limit 1 " ;
 $result= $conn->query($sql) ;
 if($result->num_rows==1){
+    $_SESSION['is_login'] = true ;
+    $_SESSION['uEmail'] = $uemail ;
 
    echo "<script>location.href='UserProfile.php';</script>" ;
     exit() ;
@@ -13,6 +20,9 @@ if($result->num_rows==1){
 else{
     $msg =  '<div class="alert alert-warning mt-2">Enter Valid Email and Password </div>' ;
 }
+}
+}else{
+       echo "<script>location.href='UserProfile.php';</script>" ;
 }
 
 ?>
